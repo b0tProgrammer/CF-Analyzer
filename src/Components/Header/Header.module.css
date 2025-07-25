@@ -1,0 +1,117 @@
+:root {
+  --bg-start: #dbeafe;
+  --bg-end: #bfdbfe;
+  --form-bg: white;
+  --text-color: #1f2937;
+  --label-color: #4b5563;
+  --error-color: #dc2626;
+  --input-border: #d1d5db;
+  --input-focus-border: #3b82f6;
+  --input-focus-shadow: rgba(59, 130, 246, 0.5);
+  --button-bg: #2563eb;
+  --button-hover-bg: #1d4ed8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-start: #1e3a8a;
+    --bg-end: #1e40af;
+    --form-bg: #1f2937;
+    --text-color: #e5e7eb;
+    --label-color: #9ca3af;
+    --error-color: #f87171;
+    --input-border: #4b5563;
+    --input-focus-border: #60a5fa;
+    --input-focus-shadow: rgba(96, 165, 250, 0.5);
+    --button-bg: #3b82f6;
+    --button-hover-bg: #2563eb;
+  }
+}
+
+
+.navbarRoot {
+  background-color: #0d1117;
+  color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbarContent {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navbarContent {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navbarTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbarSubtitle {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #e5e7eb;
+}
+
+@media (min-width: 768px) {
+  .navbarSubtitle {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+.userInfo {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .userInfo {
+    margin-top: 0;
+  }
+}
+
+.button {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #238636;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.button:hover {
+  background-color: #2ea043;
+  transform: translateY(-2px); 
+}
+
+.button:active {
+  transform: translateY(0);
+}
+span {
+  margin-top: 2rem;
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
